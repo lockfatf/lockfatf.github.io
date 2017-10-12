@@ -60,3 +60,13 @@ div.comp {
  	text-align:center;
  	color:#1A237E;
  }
+
+ div.content{
+ 	min-width : 100%;
+ }
+
+ div.content img{
+ 	heigth : 120px;
+ 	width : 120px;
+ 	align:middle;
+ }
