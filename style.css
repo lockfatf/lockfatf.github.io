@@ -38,6 +38,25 @@ padding :  0 0.3em;
 }
 
 /* MENU */
+body{
+	background-color:#FAFAFA;
+}
 div.comp {
- border : 1px solid black;
+	background-color:#EEEEEE;
+ width : 20%;
+ margin : 2%;
+ min-width : 250px;
+ height : 250px;
+ border : 1px solid #F5F5F5;
+ -moz-border-radius:7px;
+ -webkit-border-radius:7px;
+ border-radius:7px;
+ float:left;
+ display : inline-block;
+ }
+
+ div.comp h1{
+ 	font-size :20px;
+ 	text-align:center;
+ 	color:#1A237E;
  }
