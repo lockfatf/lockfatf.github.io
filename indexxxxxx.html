@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <title>Florian LOCK-FAT</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+    </head>
+    <script type="text/javascript">
+
+   		function affiche(id) {
+   			     //on récupère ta div à "toggler"
+    	var div = document.getElementById(id),
+        //on récupère son état à l'instant initial
+        //la création d'un nouveau String est nécessaire car son état va être modifié dans la boucle
+        previousState = new String(div.style.display),
+        //on récupère la liste de tous les éléments soumis à affichage conditionnel
+        showElements = document.getElementsByClassName("content");
+  
+    	//pour chacun des élements, on le cache (plutot que de vérifier si l'element était deja affiché)
+	    for(var i = 0; i < showElements.length; i++) {
+	        showElements[i].style.display = "none";
+	    }
+  
+	    //Si le block n'était précement pas affiché, alors on l'affiche
+	    //Si avant le clic il etait affiché, alors il reste caché (comportement toggle conservé)
+	    if(previousState=="none") {
+	        div.style.display = "block";
+	    }
+   			
+   		}
+
+  
+
+	</script>
+
+    <body>
+        <!-- Corps de la page >
+        <ul id="menu_horizontal">
+			<li class="bouton_gauche"><a onclick = "affiche('accueil')">Accueil</a></li>
+			<li class="bouton_gauche"><a onclick = "affiche('pro')">Projets professionnels</a></li>
+			<li class="bouton_gauche"><a onclick = "affiche('competence')">Compétences</a></li>
+			<li class="bouton_droite"><a href="admin.php">Admin</a></li>
+			<li class="bouton_droite"><a onclick = "affiche('contact')">Contact</a></li>
+		</ul-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Florian LOCK-FAT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" onclick = "affiche('contact')">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick = "affiche('pro');affiche('pro2')">Projets Professionnels</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Formations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Compétences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick = "affiche('contact')">Contact</a>
+      </li>
+      <!--li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li-->
+    </ul>
+  </div>
+</nav>
+		<div >
+			Accueil
+		</div>
+		<div>
+			
+			<div class="container-fluid" >
+				<h1>Programmation</h1>
+				
+			</div>
+			<div class="container-fluid" >
+				<h1>Web</h1>
+				Bonjour Bonjour Bonjour Bonjour Bonjour 
+			</div>
+			<div >
+				<h1>Statistiques</h1>
+				Bonjour Bonjour Bonjour Bonjour Bonjour 
+			</div>
+			<div >
+				<h1>Programmation</h1>
+				Bonjour Bonjour Bonjour Bonjour Bonjour 
+			</div>
+		</div>
+		<div>
+			<div>
+				Si vous souhaitez me contacter, voici différents moyens !
+			</div>
+			<div>
+			<a href ="https://www.linkedin.com/in/florian-lock-fat-931b92b0/"><img src ="linkedin.png" class="rounded float-left" style="witdh:100px;height:100px;float:auto"/></a>
+			<a href ="mailto:florianlockfat@gmail.com"><img src ="gmail.png" class="rounded float-right" style="witdh:100px;height:100px;float:left"/></a>
+
+			</div>
+		</div>
+
+		<div class = "container-fluid" id = "pro" style = "display:block">
+			
+			<a href ="https://www.twinsol.com/" target="_blank"><img src ="twin.png" align = "middle"/></a>
+			<h1>Data Scientist</h1>
+			<h2>2017-2018</h2>
+			<p class="text-md-right">Lors de ma dernière année de Master, j'ai eu la chance de pouvoir effectuer mon alternance chez Twin Solution, une start-up spécialisée dans l'analyse prédictive.</p>
+			<p class="text-md-right"> J'ai pu participer à de nombreux projets concrets pour divers clients et acquérir de nouvelles compétences statistiques dans le domaine de la Data Science </p>
+
+			
+		</div>
+		<div class = "container-fluid" id = "pro2" style = "display:block">
+			
+			<a href ="https://www.orange.com/fr" target="_blank"><img src ="orange.png" align = "middle"/></a>
+			<h1 >Data Analyst</h1>
+			<h2>2016-2017</h2>
+			<p class="text-md-left">Lors de ma première année de Master, j'ai eu la chance de pouvoir effectuer mon alternance chez Orange, une multinationale géante dans les télécommunications.</p>
+			<p class="text-md-left"> Durant cette année, j'ai été ammené à manipuler des données et de les restituer àfin de procéder à l'aide à la prise de décisions internes stratégiques </p>
+
+			
+		</div>
+
+		
+
+    </body>
+</html>
