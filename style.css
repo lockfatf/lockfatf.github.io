@@ -211,6 +211,9 @@
             
 #Competences .Service:hover > i.fa {
  background: #FCAC45;
- color: #ffffff;
+ color: #ffffff;}
 
- 
+ #progress-bar progress-bar-success{
+  background-color: :green;
+ }
+

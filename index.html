@@ -22,12 +22,15 @@
     <link href="style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- jQuery est inclus ! -->
     <link rel="shortcut icon" href="img/me.jpg">
+    <script src="js/jquery.timelinr-0.9.55.js"></script>
+   
     
 	
 
   </head>
 
   <body>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -40,16 +43,16 @@ Florian LOCK-FAT</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">A propos de moi</a>
+              <a class="nav-link" href="#ap">A propos de moi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Formations</a>
+              <a class="nav-link" href="#form">Formations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Compétences</a>
+              <a class="nav-link" href="#comp">Compétences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#cont">Contact</a>
             </li>
           </ul>
         </div>
@@ -88,7 +91,7 @@ Florian LOCK-FAT</a>
     </header>
 
     <!-- Page Content -->
-    <section class="content-section-a">
+    <section class="content-section-a" id="ap">
 
       <div class="container">
         <div class="row">
@@ -110,11 +113,11 @@ A propos de moi
       <!-- /.container -->
     </section>
 
-    <section class="content-section-b">
+    <section class="content-section-b" id="form">
       <div class="container">
       <div class="row">
         <div class="col-md-12">
-          
+
           <div class="page-header">
             <h1><i class="fa fa-chevron-right" aria-hidden="true"></i>
 Formations</h1>
@@ -182,7 +185,7 @@ Formations</h1>
     </section>
     <!-- /.content-section-b -->
 
-    <section class="content-section-a">
+    <section class="content-section-a" id="comp">
 
       <!-- Compétences -->
   <div id="Competences" class="text-center">
@@ -195,25 +198,161 @@ Formations</h1>
     </div>
     <div class="space"></div>
     <div class="row">
-     <div class="col-md-3 col-sm-6 service">
+     <div class="col-md-3 col-sm-6 service" >
       <i class="fa fa-code"></i>
-      <h4>Programmation</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <h4>Informatiques</h4>
+      <p>
+        <div>
+      <div >Prog Web - Php, HTML5, CSS, R Shiny</div>
+        <div class="progress" style="width: 100%;">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background-color:green;">
+        </div>
+        </div>
+      </div>
+      </p>
+      <p>
+        <div>
+      <div >POO - Java, C++, Python</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;background-color:green">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      <p>
+        <div>
+      <div >Prog - Ada, C, R</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;background-color:green">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      <p>
+        <div>
+      <div >BDD - SQL, NoSQL</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;background-color:green">
+        </div>
+        </div>
+      </div>
+      </p>
+
+     
+
      </div>
      <div class="col-md-3 col-sm-6 service">
       <i class="fa fa-line-chart"></i>
       <h4>Statistiques</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>
+        <div>
+      <div >Prog - R, Python, Shiny</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+      <p>
+        <div>
+      <div >Analyse prédictive</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      <p>
+        <div>
+      <div >Analyse descriptive</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      
      </div>
      <div class="col-md-3 col-sm-6 service">
       <i class="fa fa-book"></i>
-      <h4>Gestion de Projet</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <h4>Outils</h4>
+      <p>
+        <div>
+      <div >Méthodes Agiles</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+      <p>
+        <div>
+      <div >IDE - Python IDLE, RStudio, Eclipse, Netbeans</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+       <p>
+        <div>
+      <div >Environnement UNIX</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+      
+
      </div>
      <div class="col-md-3 col-sm-6 service">
       <i class="fa fa-plus"></i>
       <h4>Autres</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>
+        <div>
+      <div >Anglais</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+      <p>
+        <div>
+      <div >Espagnol</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 50%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      <p>
+        <div>
+      <div >Excel - Macro, VBA, TCD ...</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;float:right">
+        </div>
+        </div>
+      </div>
+      </p>
+
+      <p>
+        <div>
+      <div >Maitrise Suite Office</div>
+        <div class="progress" style="width: 100%">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+        </div>
+        </div>
+      </div>
+      </p>
+      
+
      </div>
     </div>
    </div>
@@ -235,8 +374,8 @@ Formations</h1>
               Lors de ma dernière année de Master, j'ai eu la chance d'intégrer l'équipe de Twin Solutions, une entreprise spécialisé dans la Data Science. Au premier semestre la moitié du temps puis totalement en entreprise au second, j'ai pu participer à de nombreux projets d'analyse prédictive pour divers clients.
             </p>
           </div>
-          <div class="col-lg-5 mr-auto">
-            <img  id="coin" src="twin.png" alt="">
+          <div class="col-lg-5 ml-auto">
+            <img src="twin.png" alt="" style="float:left">
           </div>
         </div>
 
@@ -244,7 +383,7 @@ Formations</h1>
       <!-- /.container -->
 
     </section>
-    <aside class="banner">
+    <aside class="banner" id="cont">
 
       <div class="container">
 
@@ -275,10 +414,11 @@ Formations</h1>
             </ul>
           </div>
         </div>
-
+       
       </div>
-      <!-- /.container -->
 
+
+      <!-- /.container -->
     </aside>
     <!-- /.banner -->
 
